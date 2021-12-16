@@ -10,27 +10,33 @@ body{
     font-style: normal;
 
 }
-form{
-    margin-bottom: 60px;
+
+.card_register #choose_classe{
     display: flex;
     justify-content: center;
-    align-items: flex-start ;
-    background-color: #ffff;
+    align-items: center;
+    flex-direction: column;
 }
 
-.card_login{
+.card_register{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 550px;
-    height: 506px;
+    width: auto;
+    height: auto;
 
     box-shadow: 0px 0px 20px #00000029;
     border-radius: 45px;
-
-
 }
+.card_register_content{
+    display: flex;
+
+    justify-content: center;
+    flex-direction: row;
+    padding: 0px 50px 50px 50px;
+}
+
 form button{
     margin: 10px auto 15px;
     background-color: #212529;
@@ -54,30 +60,62 @@ form input{
     height: 45px;
     color: #212529;
 }
+
+
+.inputs_right{
+
+    margin: 0px 0px 0px 70px;
+
+    
+}
+.inputs_left{
+
+    margin: 0px 70px 0px 0px;
+}
+
+.text_input{
+    background-color: #212529;
+}
+
 h1{
     font-size: 55px;
     font-weight: 800;
     margin-left: 0px;
-    color: #212529;
 }
 
 p{
     font-size: 20px;
     font-weight: 600;
     padding: 0%;
+    margin:0px
+
 }
 
 #submit_connexion{
+
     font-size: 15px;
     font-weight: 600;
     margin: 0px;
+    padding: 1px 2px;
 
 }
-#choose_email{
-    margin: 0px;
+#id_input_choose_captcha{
+    margin: 15px 0px 45px 0px;
+    width: 189px;
+    height: 39px;
 }
 
-#choose_password{
-    margin: 0px
+.vertical_line{
+    background-color: #212529;
+    display: inline-block;
+    border-radius: 7px;
+    height: 370px;
+    width: 10px;
+    margin: 15px 0px 0px 0px;
+}
+
+
+
+
+
     
-}

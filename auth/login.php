@@ -7,31 +7,31 @@
 </head>
 <body>
     
-    <div class="card">
+    <div class="card_login">
         <h1>Connexion</h1>
 
-        <form>
+        <form method="post">
 
             
             <div  class="inputs">
                 <!-- champs Email -->
                 
                 <div class="input_email">
-                    <p class="choose-email" id="choose-email"> Email</p>    
-                    <input type="email">
+                    <p class="choose_email" id="choose_email"> Email</p>    
+                    <input type="email" name="login_email">
                 </div>
                 <!-- champs Password -->                
 
                 
                 <div class="choose_password">   
-                    <p class="choose-password" id="choose-password"> Mot de passe </p>
-                    <input type="password">
+                    <p class="choose_password" id="choose_password"> Mot de passe </p>
+                    <input type="password" name="login_password">
                 </div>
                 <!-- champs bouton d'inscription -->     
                 <div class="submit_button" >
                     
-                    <button type="submit"> Connexion</button>
-                    <P class="inscription" id="submit_connexion"> Pas encore de compte ? S'inscrire </P>
+                    <button type="submit" name="login_submit"> Connexion</button>
+                    <P class="connexion" id="submit_connexion"> Pas encore de compte ? S'inscrire </P>
                     
                 </div>
 
@@ -44,4 +44,12 @@
 </body>
 
 </html>
+<?php
+if(isset($_POST['submit'])){
+    var_dump($_POST['email']);
+    var_dump($_POST['password']);
+
+}
+
+?>
 
