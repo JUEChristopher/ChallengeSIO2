@@ -1,0 +1,82 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #ffff;
+    font-family: montserrat, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+
+}
+form{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start ;
+    background-color: #ffff;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 550px;
+    height: 506px;
+
+    box-shadow: 0px 0px 20px #00000029;
+    border-radius: 45px;
+
+
+}
+form button{
+    margin: 10px auto 15px;
+    background-color: #212529;
+    border: 0px;
+    border-radius: 15px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    width: 378px;
+    height: 45px;
+}
+form input{
+    margin: 10px auto 15px;
+    background-color: white;
+    border-color: #212529;
+    border-radius: 15px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    width: 378px;
+    height: 45px;
+    color: #212529;
+}
+h1{
+    font-size: 55px;
+    font-weight: 800;
+    margin-left: 0px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0%;
+}
+
+#submit_connexion{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px;
+
+}
+#choose-email{
+    margin: 0px;
+}
+
+#choose-password{
+    margin: 0px
+    
+}

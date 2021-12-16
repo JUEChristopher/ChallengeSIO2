@@ -1,0 +1,211 @@
+
+/* ---------- Fonts ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+/* ---------- Fonts ---------- */
+
+
+/* ---------- Reset ---------- */
+
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Reset ---------- */
+
+
+/* ---------- Global ---------- */
+
+html{
+  height: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- Global ---------- */
+
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+    background-color: #212529;
+    box-shadow: 0px 0px 12px #212529;
+  }
+  .navbar .navbar-brand {
+    color: #ffffff;
+  }
+
+  .navbar .navbar-text {
+    color: #ffffff;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: #ffffff;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+  }
+
+  .navbar .navbar-nav .nav-link:not(.disabled):hover,
+  .navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #9f9f9f;
+  }
+
+  .navbar .navbar-toggler {
+    border-color: #ffffff;
+  }
+
+  .navbar .navbar-toggler:hover,
+  .navbar .navbar-toggler:focus {
+    background-color: transparent;
+  }
+
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    color: #ffffff;
+  }
+
+  img{
+    width: 80px;
+}
+
+/* ---------- Navbar ---------- */
+
+
+/* ---------- Page d'accueil ---------- */
+
+  .content{
+      display: flex;
+      justify-content: flex-start;
+      margin: 75px 0px 0px 80px;
+  }
+
+  .title h1{
+      width: 70vw;
+      font-size: 45px;
+      font-weight: 700;
+  }
+
+  .title p{
+      width: 60vw;
+  }
+
+/* ---------- Page d'accueil ---------- */
+
+
+/* ---------- Equipement form ---------- */
+
+.register_content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 75px 0px 75px 0px;
+}
+
+.register_content_left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.register_content_left h2{
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.register_content_left img{
+  width: 350px;
+  margin-top: 50px;
+}
+
+.register_card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 425px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #00000029;
+  margin-left: 50px;
+}
+
+.register_card form{
+  width: 300px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.equip_input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.equip_input input,select{
+  height: 38px;
+  border-radius: 10px;
+  border: 2px solid #212529;
+  padding: 5px 15px 5px 15px;
+  font-size: 15px;
+}
+
+.equip_input select{
+  appearance: none;
+}
+
+.equip_input label{
+  margin: 0px 0px 5px 5px;
+  font-weight: 600;
+  font-size: 15px ;
+}
+
+.form_button{
+  align-self: center;
+}
+
+input[type="submit"]{
+  padding: 7px 30px 7px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #212529;
+  color: #ffffff;
+}
+
+
+
+
+
+
+/* ---------- Equipment form ---------- */
+
+
+  /* ---------- Footer ---------- */
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212529;
+  color: #ffffff;
+  height: 60px;
+  margin-top: auto;
+  box-shadow: 0px 0px 12px #212529;
+}
+
+/* ---------- Footer ---------- */
+
+
+
