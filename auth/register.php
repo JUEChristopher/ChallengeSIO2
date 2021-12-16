@@ -87,10 +87,66 @@
 </html>
 
 <?php
-$erreur = null;
-if(isset($_POST['submit'])){
-    var_dump($_POST['email']);
-    var_dump($_POST['password']);
-    
+
+
+# vérifier que le bouton est appuyé 
+/*
+if(isset($_POST['register_submit'])){
+
+
+    var_dump($_POST['register_last_name']);
+    var_dump($_POST['register_first_name']);
+    var_dump($_POST['register_email']);
+    var_dump($_POST['register_class']);
+    var_dump($_POST['register_password']);
+    var_dump($_POST['register_confirmed_password']);
+    var_dump($_POST['register_captcha']);
+
+    # vérifier que le bouton est appuyé
 
 }
+*/
+
+require_once "../db_link/config.php";
+
+$error = null;
+
+try{
+    if (isset(($_POST['register_submit']))){
+
+    
+    $mdp_hash = password_hash($_POST['register_password'], PASSWORD_DEFAULT);
+    $mdp_hash_confirmed = password_hash($_POST['register_confirmed_password'], PASSWORD_DEFAULT);
+
+    if ($mdp_hash === $mdp_hash_confirmed){
+
+        $query = $pdo->prepare('INSERT INTO user (USER_NAME, USER_LASTNAME, USER_EMAIL, USER_PASSWORD, USER_ROLE, USER_HND) VALUES (:first_name, :last_name, :email, :psw, :roles, :hdn)');
+
+        $query ->execute([
+            'first_name' => $_POST['register_last_name'],
+            'last_name' => $_POST['register_first_name'],
+            'email' => $_POST['register_email'],
+            'psw' => $mdp_hash,
+            'roles' => 'Etudiant',
+            'hdn' => $_POST['register_class']
+        ]);
+        header('location: login.php');
+        exit();
+
+
+    }else{
+        $erreur = "Veuillez écrire le même mot de passe dans les champs";
+    }
+
+   
+}
+
+} catch (PDOException $e) {
+    $error = $e->getMessage();
+}
+?>
+<?php if (isset($erreur)): ?>
+<div class="alert alert-danger">
+    <?= $erreur?>
+</div>
+<?php endif ?>
