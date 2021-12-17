@@ -1,21 +1,10 @@
-body{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    background-color: #ffff;
-    font-family: montserrat, sans-serif;
 
-    font-weight: 400;
 
-    font-style: normal;
-
-}
-form{
-    margin-bottom: 60px;
+.login_content{
     display: flex;
     justify-content: center;
-    align-items: flex-start ;
-    background-color: #ffff;
+    flex-wrap: wrap;
+    margin: 75px 0px 75px 0px;
 }
 
 .card_login{
@@ -25,13 +14,19 @@ form{
     flex-direction: column;
     width: 550px;
     height: 506px;
-
     box-shadow: 0px 0px 20px #00000029;
     border-radius: 45px;
-
-
 }
-form button{
+
+.card_login_content{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start ;
+    background-color: #ffff;
+}
+
+.card_login_content button{
     margin: 10px auto 15px;
     background-color: #212529;
     border: 0px;
@@ -42,26 +37,28 @@ form button{
     width: 378px;
     height: 45px;
 }
-form input{
+
+.card_login_content input{
     margin: 10px auto 15px;
-    background-color: white;
+    background-color: #ffffff;
     border-color: #212529;
     border-radius: 15px;
-    color: #eeeeee;
+    color: #ffffff;
     text-align: center;
     font-size: 28px;
     width: 378px;
     height: 45px;
     color: #212529;
 }
-h1{
+
+.card_login_content h1{
     font-size: 55px;
     font-weight: 800;
     margin-left: 0px;
     color: #212529;
 }
 
-p{
+.card_login_content p{
     font-size: 20px;
     font-weight: 600;
     padding: 0%;
@@ -71,13 +68,12 @@ p{
     font-size: 15px;
     font-weight: 600;
     margin: 0px;
-
 }
+
 #choose_email{
     margin: 0px;
 }
 
 #choose_password{
     margin: 0px
-    
 }
