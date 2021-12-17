@@ -14,28 +14,28 @@
 
             <div class="input_last_name" id="class_choose_nom"> 
                 <p class="choose_Nom">Nom</p>    
-                <input type="last_name" name="register_last_name">
+                <input type="last_name" name="register_last_name" required>
             </div>
 
             <!-- champs Prénom -->
             
             <div class="input_first_name" id="class_choose_first_name">
                 <p class="choose_first_name">Prénom</p>    
-                <input type="first_name" name="register_first_name">
+                <input type="first_name" name="register_first_name" required>
             </div>
 
             <!-- champs Email -->
             
             <div class="input_email_register" id="class_choose_email_register">
                 <p class="choose-email_register" id="choose_email_register">Email</p>    
-                <input type="email" name="register_email">
+                <input type="email" name="register_email" required>
             </div>                
 
             <!-- champs Classe -->
             
             <div class="input_class" id="class_choose_class" >
                 <p class="choose_class">Classe</p>    
-                <input type="class" name="register_class">
+                <input type="class" name="register_class" required>
             </div>
         </div>
         <div class="div_vertical_line">
@@ -48,14 +48,14 @@
             
             <div class="input_password_register" id="class_choose_password_register">   
                 <p class="choose_password_register" id="choose_password_register">Mot de passe</p>
-                <input type="password" name="register_password">
+                <input type="password" name="register_password" required>
             </div>
 
             <!-- champs Confirmation Password -->                
             
             <div class="input_confirmed_password_register" id="class_confirmed_password_register">   
                 <p class="choose_password_register" id="choose_confirmed_password_register">Confirmation du Mot de passe</p>
-                <input type="password" name="register_confirmed_password">
+                <input type="password" name="register_confirmed_password" required>
             </div>
 
             <!-- champs Captchat -->                
@@ -71,6 +71,8 @@
                 <button type="submit" name="register_submit">S'inscrire</button>
                 
             </div>
+            
+
             
         </div>
     </form>
@@ -109,9 +111,6 @@ try{
     
     $mdp_hash = password_hash($_POST['register_password'], PASSWORD_DEFAULT);
     $mdp_hash_confirmed = password_hash($_POST['register_confirmed_password'], PASSWORD_DEFAULT);
-
-    ECHO($mdp_hash . "\n");
-    echo($mdp_hash_confirmed);
 
     if (password_verify($_POST['register_password'],$mdp_hash_confirmed)){
 

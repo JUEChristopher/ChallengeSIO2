@@ -29,7 +29,7 @@
 
                 <div class="submit_button" >
                     <button type="submit" name="login_submit">Connexion</button>
-                    <p class="connexion" id="submit_connexion">Pas encore de compte ? S'inscrire</p>
+                    <p class="connexion" id="submit_connexion">Pas encore de compte ? <a href="../auth/register.php">S'enregistrer</a></p>
                 </div>
             </div>
         </form>
@@ -46,18 +46,19 @@ if (isset($_POST['login_submit'])){
     $verif_email ->execute([':mail' => $_POST['login_email']]);
     $resultat = $verif_email->fetch();
 
-    try{
-        if (password_verify($_POST['login_password'], $resultat->USER_PASSWORD))
-    {
-        session_start();
-        $_SESSION['role'] = $resultat->USER_ROLE;
-        $_SESSION['id_user'] = $resultat->USER_ID;
-        if($resultat->USER_ROLE === 'Etudiant'){
-            header('Location: ../index.php');
-        }
-    }else{
-        $erreur = "Erreur1";
+
+    if (password_verify($_POST['login_password'], $resultat->USER_PASSWORD))
+{
+    session_start();
+    $_SESSION['role'] = $resultat->USER_ROLE;
+    $_SESSION['id_user'] = $resultat->USER_ID;
+    if($resultat->USER_ROLE === 'Etudiant'){
+        header('Location: ../index.php');
     }
+}else{
+    $erreur = "Erreur1";
+}
+    try{
 
     } catch (PDOException $e) {
         $error = $e->getMessage();
