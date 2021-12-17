@@ -95,6 +95,7 @@ body{
 
   .title p{
       width: 60vw;
+
   }
 
 /* ---------- Page d'accueil ---------- */
@@ -102,9 +103,43 @@ body{
 
 /* ---------- Equipement form ---------- */
 
+.type_tittle h3{
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.type_card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 425px;
+  height: 250px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #00000029;
+  margin-left: 50px;
+}
+
+.type_form{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  width: 300px;
+  margin: 45px 0px 45px 0px;
+}
+
+.type_form h3{
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .register_content{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin: 75px 0px 75px 0px;
 }
@@ -178,7 +213,7 @@ body{
 
 input[type="submit"]{
   padding: 7px 30px 7px 30px;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 10px;
   border: 0;
   background-color: #212529;
@@ -193,6 +228,22 @@ input[type="submit"]{
 .extra_content{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.extra_content_top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 75px 0px 75px 0px;
+}
+
+.extra_content_middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin: 75px 0px 75px 0px;
 }
@@ -205,7 +256,20 @@ input[type="submit"]{
   margin-right: 50px;
 }
 
+.extra_content_right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
 .extra_content_left h2{
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.extra_content_right h2{
   font-weight: 700;
   font-size: 35px;
 }
@@ -215,23 +279,49 @@ input[type="submit"]{
   margin-top: 50px;
 }
 
-.extra_card{
+.extra_content_right img{
+  width: 350px;
+  margin-top: 50px;
+}
+
+.ci_card{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 425px;
-  height: 500px;
+  height: auto;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 0px 20px #00000029;
   margin-left: 50px;
 }
 
-.extra_card form{
+.cm_card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 425px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #00000029;
+  margin-right: 50px;
+}
+
+.cm_card form{
   width: 300px;
   display: flex;
   align-items: baseline;
   flex-direction: column;
+  margin: 30px 0px 20px 0px;
+}
+
+.ci_card form{
+  width: 300px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  margin: 30px 0px 20px 0px;
 }
 
 .connection_input{
@@ -263,16 +353,7 @@ input[type="submit"]{
   align-self: center;
 }
 
-input[type="submit"]{
-  padding: 7px 30px 7px 30px;
-  margin-top: 20px;
-  border-radius: 10px;
-  border: 0;
-  background-color: #212529;
-  color: #ffffff;
-}
-
-/* ---------- Connection form ---------- */
+/* ---------- Extra form ---------- */
 
 
 
