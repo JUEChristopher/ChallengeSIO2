@@ -18,8 +18,13 @@ if(isset($_POST['e_type'])){
 
 
     <?php if($form): ?>
+
         <div class="register_card">
             <form action="" method="post" class="register_form">
+
+                <div class="type_tittle">
+                    <h3> <?= $_POST['e_type'] ?> </h3>
+                </div>
                 
                 <div class="equip_input" id="input_equip_ram">
                     <label for="ram">Mémoire RAM (en Go)</label>
@@ -41,6 +46,7 @@ if(isset($_POST['e_type'])){
                         <label for="os">Fourni par la région</label>
                         <input type="text" name="provision" id="equip_provision" placeholder="Windows Famille" required>
                     </div>
+
                 <?php endif; ?>
 
                 <div class="form_button">
@@ -51,22 +57,25 @@ if(isset($_POST['e_type'])){
 
 
     <?php else: ?>
-        <form method="post">
-            <div class="equip_input" id="input_equip_type">
-                <label for="type">Type d'équipement</label>
-                <select name="e_type" id="equip_type">
-                    <option value="PC Portable">PC Portable</option>
-                    <option value="PC Fixe">PC Fixe</option>
-                    <option value="Tablette">Tablette</option>
-                    <option value="Portable">Portable</option>
-                </select>
-            </div>
-            <div class="form_button">
-                <input type="submit" value="Choisir">
-            </div>
-        </form>
+        <div class="type_card">
+            <form method="post" class="type_form">
+                <h3>Type d'équipement</h3>
+                <div class="equip_input" id="input_equip_type">
+                    <select name="e_type" id="equip_type">
+                        <option value="PC Portable">PC Portable</option>
+                        <option value="PC Fixe">PC Fixe</option>
+                        <option value="Tablette">Tablette</option>
+                        <option value="Portable">Portable</option>
+                    </select>
+                </div>
+                <div class="form_button">
+                    <input type="submit" value="Choisir">
+                </div>
+            </form>
+        </div>
             
     <?php endif; ?>
+
 </div>
 
 
