@@ -33,6 +33,10 @@ body{
 
 /* ---------- Global ---------- */
 
+/* ---------- Index ----------- */
+
+
+
 
 /* ---------- Navbar ---------- */
 
@@ -83,20 +87,45 @@ body{
 
   .content{
       display: flex;
-      justify-content: flex-start;
-      margin: 75px 0px 0px 80px;
+      justify-content: center;
+
+      margin: 65px 0px 0px 80px;
   }
 
   .title h1{
+      display: flex;
+      justify-content: center;
       width: 70vw;
       font-size: 45px;
       font-weight: 700;
   }
 
   .title p{
-      width: 60vw;
+    font-size: 25px;
 
   }
+
+  .title .bio{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+  }
+
+  .img_index_1 .img_index{
+    
+    width: 500px;
+    font-weight: 700;
+    margin-left: 200px;
+  }
+  .img_index_1{
+    
+    display: flex;
+    justify-content: center;
+
+  }
+
 
 /* ---------- Page d'accueil ---------- */
 
@@ -134,6 +163,12 @@ body{
   font-size: 23px;
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+.checkbox_laptop{
+  display: flex;
+  justify-content:flex-start;
+  padding-left: 25px;
 }
 
 .register_content{
@@ -237,7 +272,7 @@ input[type="submit"]{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 75px 0px 75px 0px;
+  margin: 30px 0px 30px 0px;
 }
 
 .extra_content_middle{
@@ -245,7 +280,7 @@ input[type="submit"]{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 75px 0px 75px 0px;
+  margin: 30px 0px 30px 0px;
 }
 
 .extra_content_left{
@@ -288,24 +323,29 @@ input[type="submit"]{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 425px;
   height: auto;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 0px 20px #00000029;
   margin-left: 50px;
+  padding: 30px;
 }
 
 .cm_card{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 425px;
   height: auto;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 0px 20px #00000029;
+  margin-top: 80px;
   margin-right: 50px;
+  padding: 30px;
 }
 
 .cm_card form{
@@ -348,11 +388,77 @@ input[type="submit"]{
   font-weight: 600;
   font-size: 15px ;
 }
-
 .form_button{
-  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
+/* ---------- Extra form ---------- */
+
+
+
+/* ---------- Equipements view ---------- */
+
+.view_content{
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 75px 0;
+  margin: 0 auto;
+  gap: 50px 0px;
+}
+
+.equip_view_title{
+  color: #212529;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.view_content_equip{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px 50px;
+}
+
+.laptop_card, .desktop_card, .phone_card, .tablet_card, .internet_card , .con_mobile_card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #00000029;
+}
+
+.equip_view_form{
+  width: 300px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  margin: 45px 0px 45px 0px;
+}
+
+.equip_view_form input:hover{
+  cursor: auto;
+}
+
+.view_equip{
+  color: #ffffff;
+  background-color: #212529;
+}
+
+.vertical_line{
+  background-color: #212529;
+  display: inline-block;
+  border-radius: 7px;
+  height: 370px;
+  width: 10px;
+  margin: 15px 0px 0px 0px;
+}
 /* ---------- Extra form ---------- */
 
 

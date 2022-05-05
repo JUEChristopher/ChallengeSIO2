@@ -1,0 +1,105 @@
+
+.card_register #choose_classe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_register{
+    width: auto;
+    height: auto;
+    box-shadow: 0px 0px 20px #00000029;
+    border-radius: 45px;
+}
+
+.card_register_content{
+    display: flex;
+
+    justify-content: center;
+    flex-direction: row;
+    padding: 0px 50px 50px 50px;
+}
+
+.card_register_content button{
+    margin: 10px auto 15px;
+    background-color: #212529;
+    border: 0px;
+    border-radius: 15px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    width: 378px;
+    height: 45px;
+}
+
+.card_register_content input{
+    margin: 10px auto 15px;
+    background-color: white;
+    border-color: #212529;
+    border-radius: 15px;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    width: 378px;
+    height: 45px;
+    color: #212529;
+}
+
+.inputs_right{
+    margin: 0px 0px 0px 70px;
+    font-weight: 400;
+}
+
+.inputs_left{
+    margin: 0px 70px 0px 0px;
+    font-weight: 400;
+}
+
+.text_input{
+    background-color: #212529;
+}
+
+.card_register h1{
+    font-size: 55px;
+    font-weight: 800;
+    margin-left: 0px;
+}
+
+.card_register_content p{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0%;
+    margin:0px
+}
+
+#submit_connexion{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 1px 2px;
+}
+
+#id_input_choose_captcha{
+    margin: 15px 0px 45px 0px;
+    width: 189px;
+    height: 39px;
+}
+
+.horizontal_line{
+    background-color: #212529;
+    border-radius: 7px;
+    height: 10px;
+    width: 370px;
+    margin: 15px 0px 0px 0px;
+}
+
+.div_horizontal_line{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+    
